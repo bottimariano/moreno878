@@ -108,12 +108,13 @@ footer span{color:rgba(245,243,238,.55)}
 
 @media(max-width:768px){
   nav{padding:1rem 1.25rem}
-  .hero{grid-template-columns:1fr;min-height:auto}
-  .hero-left{padding:2.5rem 1.25rem 2rem}
-  .hero-right{height:55vw;grid-template-rows:1fr}
-  .hero-img:nth-child(2){display:none}
+  .hero{grid-template-columns:1fr;height:auto;max-height:none;min-height:auto;display:flex;flex-direction:column-reverse}
+  .hero-left{padding:2rem 1.25rem 1.75rem}
+  .hero-right{height:62vw;min-height:220px;width:100%}
   .stats{grid-template-columns:repeat(2,1fr)}
   section{padding:3.5rem 1.25rem}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .btn-p,.btn-s{width:100%;justify-content:center}
   .gallery-intro{grid-template-columns:1fr;gap:1.25rem}
   .ggrid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
   .gitem{min-height:160px}
