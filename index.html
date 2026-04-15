@@ -123,6 +123,43 @@ footer span{color:rgba(245,243,238,.55)}
   .fgrid{grid-template-columns:1fr}
   .cond-inner{grid-template-columns:1fr;gap:2rem}
 }
+
+.empresas-sec{background:var(--off-white);border-top:1px solid rgba(0,0,0,0.07)}
+.empresas-inner{max-width:1100px;margin:0 auto}
+.empresas-sub{font-size:.95rem;color:var(--cement);font-weight:300;line-height:1.75;max-width:520px;margin-bottom:2.5rem}
+.empresas-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--warm-gray);border-radius:12px;overflow:hidden}
+.empresa-card{background:var(--off-white);padding:2rem 2rem;display:flex;align-items:center;gap:1.5rem;text-decoration:none;transition:background .2s}
+.empresa-card:hover{background:#EEECEA}
+.empresa-logo{height:36px;width:auto;object-fit:contain;flex-shrink:0;filter:invert(0)}
+.empresa-logo-dark{filter:invert(1) brightness(0)}
+.empresa-info{display:flex;flex-direction:column;gap:3px}
+.empresa-name{font-weight:500;font-size:15px;color:var(--black);letter-spacing:-.01em}
+.empresa-desc{font-size:13px;color:var(--cement);font-weight:300;line-height:1.5}
+@media(max-width:768px){
+  .empresas-grid{grid-template-columns:1fr}
+  .empresa-card{padding:1.5rem 1.25rem}
+}
+
+.empresas-sec{background:var(--off-white);border-top:1px solid rgba(0,0,0,0.06)}
+.empresas-inner{max-width:1100px;margin:0 auto}
+.empresas-sub{font-size:.95rem;color:var(--cement);font-weight:300;line-height:1.75;max-width:520px;margin-bottom:2.5rem}
+.logos-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--warm-gray);border-radius:12px;overflow:hidden;max-width:700px}
+.logo-card{background:var(--off-white);padding:2rem 2.25rem;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--black);transition:background .2s}
+.logo-card:hover{background:#EFEDE8}
+.logo-svg{height:42px;width:auto;color:var(--black)}
+.logo-desc{font-size:12px;color:var(--cement);font-weight:300;letter-spacing:.02em}
+@media(max-width:768px){.logos-grid{grid-template-columns:1fr;max-width:100%}}
+
+
+.ecard{background:var(--off-white);padding:2rem 2.25rem;display:flex;align-items:center;gap:2rem;text-decoration:none;color:inherit;transition:opacity .2s}
+.ecard:hover{opacity:.8}
+.empresa-logo{height:36px;width:auto;max-width:110px;object-fit:contain}
+.empresa-logo-dark{filter:invert(1) brightness(0)}
+.elogo{width:120px;min-width:120px;height:56px;display:flex;align-items:center;justify-content:flex-start;flex-shrink:0}
+.elogo-reblit{background:var(--off-white);border-radius:6px}
+.elogo-reblit span{color:white!important}
+.ename{font-weight:500;font-size:15px;margin-bottom:3px}
+.edesc{font-size:13px;color:var(--cement);font-weight:300}
 </style>
 </head>
 <body>
@@ -195,6 +232,7 @@ footer span{color:rgba(245,243,238,.55)}
   </div>
 </section>
 
+
 <section class="feat-sec">
   <div class="feat-inner">
     <p class="stag">Qué incluye</p>
@@ -223,10 +261,15 @@ footer span{color:rgba(245,243,238,.55)}
       <div class="fcard">
         <div class="fico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
         <div class="ftitle">Microcentro rosarino</div>
-        <p class="fdesc">Moreno 878, 2do piso. Todo cerca: transporte, bancos, opciones de almuerzo.</p>
+        <p class="fdesc">Moreno 878, 2do piso. Acceso por escalera o ascensor. Portería por la mañana y monitoreo en espacios comunes.</p>
       </div>
       <div class="fcard">
         <div class="fico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <div class="ftitle">Servicios incluidos</div>
+        <p class="fdesc">Internet fibra óptica (Claro), agua, luz y expensas. Sin costos ocultos ni sorpresas en la boleta.</p>
+      </div>
+      <div class="fcard">
+        <div class="fico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></div>
         <div class="ftitle">Sin ataduras</div>
         <p class="fdesc">Aviso de 30 días para salir. Sin contratos eternos ni compromisos de largo plazo.</p>
       </div>
@@ -248,8 +291,41 @@ footer span{color:rgba(245,243,238,.55)}
       <li class="citem"><span class="clabel">Sala privada</span><span class="cval">Reserva con 1hr de anticipación</span></li>
       <li class="citem"><span class="clabel">Aviso para salir</span><span class="cval">30 días + mes en curso</span></li>
       <li class="citem"><span class="clabel">Insumos incluidos</span><span class="cval">Limpieza de baños y cocina</span></li>
+      <li class="citem"><span class="clabel">Internet</span><span class="cval">Fibra óptica Claro incluida</span></li>
+      <li class="citem"><span class="clabel">Servicios</span><span class="cval">Agua y luz incluidos</span></li>
+      <li class="citem"><span class="clabel">Acceso</span><span class="cval">Escalera o ascensor · portería mañana · monitoreo espacios comunes</span></li>
+      <li class="citem"><span class="clabel">Internet</span><span class="cval">Fibra óptica Claro incluida</span></li>
+      <li class="citem"><span class="clabel">Servicios</span><span class="cval">Agua, luz y expensas incluidas</span></li>
+      <li class="citem"><span class="clabel">Edificio</span><span class="cval">Portería AM · Monitoreo · Ascensor</span></li>
       <li class="citem"><span class="clabel">Dirección</span><span class="cval">Moreno 878, 2do piso — Rosario</span></li>
     </ul>
+  </div>
+</section>
+
+
+
+
+<section class="empresas-sec">
+  <div class="empresas-inner">
+    <p class="stag">Comunidad</p>
+    <h2 class="stitle">Empresas en el espacio</h2>
+    <p class="empresas-sub">Ya somos dos estudios con base en Moreno 878. Sumamos coworkers que quieran trabajar en un ambiente profesional, creativo y con buena energía.</p>
+    <div class="empresas-grid">
+      <a href="https://wearetonica.com" target="_blank" class="ecard empresa-card">
+        <div class="elogo"><img src="https://wearetonica.com/cdn/shop/files/logo_eb1a6f48-80aa-4a28-9bed-96e1b4c3e0a4.svg?v=1739378981" alt="Tónica" class="empresa-logo"></div>
+        <div>
+          <div class="ename">Tónica</div>
+          <div class="edesc">Agencia digital · Shopify, MVPs y soluciones B2B</div>
+        </div>
+      </a>
+      <a href="https://reblit.com" target="_blank" class="ecard empresa-card">
+        <div class="elogo elogo-reblit"><img src="https://reblit.com/wp-content/uploads/2021/08/logo-bco-23.png" alt="Reblit" class="empresa-logo empresa-logo-dark"></div>
+        <div>
+          <div class="ename">Reblit</div>
+          <div class="edesc">Estudio creativo · Branding, diseño e identidad visual</div>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
